@@ -1,0 +1,452 @@
+/*
+Theme Name: Minamaze-child
+Theme URI: http://www.thinkupthemes.com/free/minamaze-free/
+Template:     Minamaze
+*/
+
+/* common
+----------------------------------------------- */
+body, button, input, select, textarea {
+  font-size: 14px;
+} 
+
+.acenter {
+  text-align: center;
+}
+
+.aleft {
+  text-align: left;
+}
+
+.aright {
+  text-align: right;
+}
+
+#intro.option1 #intro-core:after {
+  border-bottom: 3px solid #A20B00;
+}
+
+.nav-previous a {
+  background-color: #B70C00;
+}
+
+.nav-previous a:hover {
+  background-color: #D50E00;
+}
+
+th, td {
+  padding: 8px 2%;
+}
+
+.mb30 {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.mb50 {
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.link {
+  color: #555 !important;
+  text-decoration: underline;
+}
+.link:hover {
+  color: #B70C00;
+}
+
+.text_b {
+  font-weight: bold;
+  color: #555;
+}
+
+/* body の余白指定 
+----------------------------------------------- */
+@media (max-width: 767px){
+
+  body {
+      padding-left: 0;
+      padding-right: 0;
+  }
+
+  #header {
+      padding: 0 0 20px!important;
+  }
+}
+
+
+/* header-logo の指定
+----------------------------------------------- */
+.logo-header {
+  width: 100%;
+  height: 52px;
+  padding: 0;
+  background-color: #A20B00;
+  color: #FFF;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.logo-header a {
+  color: #FFF;
+}
+
+.logo-header .wrap {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.logo-header .logo {
+  float: left;
+  width: 120px;
+  height: 120px;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo-header .logo img {
+  height: 115px;
+  width: 115px;
+  position: absolute;
+  top: -18px;
+}
+
+.logo-header .site-name-wrap {
+  float: left;
+  padding: 10px 5px;
+  box-sizing: border-box;
+}
+
+.logo-header .site-name {
+  float: left;
+  font-family: 'Noto Serif', serif;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #FFF;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.logo-header .wrap .subtitle {
+  float: left;
+  margin-top: 11px;
+}
+
+@media only screen and (max-width: 640px){
+  .logo-header .logo {
+    height: 80px;
+    width: 80px;
+  }
+
+  .logo-header .logo img {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: -10px;
+  }
+
+  .logo-header .site-name-wrap {
+    padding: 6px 5px;
+  }
+
+  .logo-header .site-name {
+    float: none;
+    font-size: 20px;
+  }
+
+  .logo-header .wrap .subtitle {
+    float: none;
+  }
+}
+
+
+/* header-menu の指定
+----------------------------------------------- */
+#header .header-links li {
+  font-size: 14px;
+}
+
+#header .header-links > ul > li a {
+  padding: 10px 20px;
+}
+
+@media only screen and (max-width: 768px){
+  #header-responsive {
+    position: relative;
+  }
+
+  .btn-navbar {
+    display: block;
+    padding: 10px 10px;
+    position: absolute;
+    top: -45px;
+    right: 10px;
+    background-color: #222;
+    border: 1px solid #121212;
+  }
+
+  .btn-navbar .icon-bar {
+    display: block;
+    width: 43px;
+    height: 5px;
+    margin: 0 0 6px auto;
+    background-color: #FFF;
+  }
+}
+
+@media only screen and (max-width: 640px){
+  .logo-header .site-name {
+    display: block!important;
+  }
+}
+
+#header .menu > li.menu-hover > a, #header .menu > li.current_page_item > a, #header .menu > li.current-menu-ancestor > a, #header .menu > li > a:hover {
+    color: #B70C00;
+}
+
+.themebutton, button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  background: #B70C00;
+}
+
+/* TOPページ のスライダー
+----------------------------------------------- */
+
+#slider .featured-title span {
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 30px;
+  padding: 5px 15px;
+}
+
+#slider .featured-excerpt span {
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 20px;
+  padding: 5px 15px;
+}
+
+#slider .featured-link a:hover {
+  background-color: #B70C00;
+}
+
+/* TOPページ のコンテンツ指定
+----------------------------------------------- */
+#section-home .section {
+  min-height: 335px;
+}
+
+.entry-content p:first-child {
+  min-height: 115px;
+}
+
+@media only screen and (max-width: 640px){
+  #section-home img {
+    width: 100%;
+  }
+
+  #section-home .entry-content p {
+    font-size: 14px;
+  }
+
+  #section-home .more-link {
+    padding: 10px 50px;
+  }
+
+  .themebutton, button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    background: #222;
+  }
+}
+
+/* TOPページ のニュース
+----------------------------------------------- */
+.main-contents-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: #fff;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.main-contents-title span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+h2 > span.subtitle {
+  font-size: 16px;
+  font-weight: normal;
+  color: #777;
+}
+
+/* TOPページ ボタン
+----------------------------------------------- */
+
+#section-home .more-link {
+    padding: 5px 20px;
+}
+
+.themebutton:hover, button:hover, html input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+  background: #D50E00;
+}
+
+.go-next-btn {
+  text-align: center;
+  padding: 5px 20px;
+  background-color: #B70C00;
+  color: #fff!important;
+}
+
+.go-next-btn:hover {
+  background: #D50E00;
+}
+
+.btn-container {
+  clear: both;
+  width: 100%;
+  height: 65px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.btn-container .half-size-btn {
+  width: 49.5%;
+  margin-right: 0.5%;
+  float: left;
+  background-color: #f2f1f0;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.btn-container .half-size-btn:hover,
+:focus {
+  opacity: 0.8;
+}
+
+.btn-container .half-size-btn:last-child {
+  margin-right: 0;
+}
+
+.btn-container .half-size-btn .title,
+.btn-container .full-size-btn .title {
+  font-size: 18px;
+}
+
+.btn-container .full-size-btn {
+  width: 100%;
+  float: left;
+  background-color: #f2f1f0;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.btn-container .full-size-btn:hover,
+:focus {
+  opacity: 0.8;
+}
+
+.btn-container .half-size-btn i,
+.btn-container .full-size-btn i {
+  line-height: 1.8;
+  color: #B70C00;
+  float: right;
+}
+
+/* TOPページ 活動内容紹介
+----------------------------------------------- */
+.activity-container {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.activity-container > .inner-wrap {
+  width: 32%;
+  min-height: 250px;
+  float: left;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid #eee;
+  margin: 0 5px;
+}
+
+.activity-container > .inner-wrap > dt > .title {
+  font-size: 18px;
+}
+
+.activity-container > .inner-wrap > dd {
+  -webkit-margin-start: 0;
+}
+
+.activity-container > .inner-wrap > dd > .sub-title {
+  display: block;
+}
+
+.activity-container > .inner-wrap > dd > .desc {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+/* TOPページ　ニュース
+----------------------------------------------- */
+.contents-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.news-posts {
+  clear: both;
+  overflow: hidden;
+  margin: 0 0 40px;
+}
+
+.news-posts .posts-image {
+  width: 110px;
+  float: left;
+  margin-right: 30px;
+}
+
+.news-posts .content {
+  float: left;
+}
+
+.news-posts .title {
+  font-weight: bold;
+}
+
+.news-posts li {
+  list-style-type: none;
+  overflow: hidden;
+  border-bottom: 1px solid #999;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.news-posts .posts-info {
+  float: right;
+  width: 200px;
+}
+
+.news-posts .posts-info .title {
+  padding: 5px 0;
+  background-color: #333;
+  text-align: center;
+  font-size: 13px;
+  color: #FFF;
+  font-weight: normal;
+  width: 100%;
+}
+
+/* page menu
+----------------------------------------------- */
+.page-menu li {
+  line-height: 2.5;
+}
+
+.page-menu li > a {
+  display: block;
+  text-decoration: underline;
+}
+
+/* aboutus
+----------------------------------------------- */
+.mozi_w {
+  color: #FFF;
+}
