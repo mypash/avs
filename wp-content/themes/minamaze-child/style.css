@@ -1,13 +1,14 @@
 /*
 Theme Name: Minamaze-child
 Theme URI: http://www.thinkupthemes.com/free/minamaze-free/
-Template:     Minamaze
+Template:     minamaze
 */
 
 /* common
 ----------------------------------------------- */
 body, button, input, select, textarea {
   font-size: 14px;
+  font-family: "Hiragino Kaku Gothic Pro",'MUli',"YuGothic",helvetica,sans-serif;
 } 
 
 .acenter {
@@ -20,18 +21,6 @@ body, button, input, select, textarea {
 
 .aright {
   text-align: right;
-}
-
-#intro.option1 #intro-core:after {
-  border-bottom: 3px solid #A20B00;
-}
-
-.nav-previous a {
-  background-color: #B70C00;
-}
-
-.nav-previous a:hover {
-  background-color: #D50E00;
 }
 
 th, td {
@@ -58,6 +47,108 @@ th, td {
 .text_b {
   font-weight: bold;
   color: #555;
+}
+
+.entry-meta a:hover {
+  color: #D50E00;
+}
+
+.smaller {
+  font-size: 0.8em;
+}
+
+
+/* totop
+----------------------------------------------- */
+.totop {
+  overflow: hidden;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.totop > a {
+  color: #555 !important;
+  text-decoration: underline;
+}
+
+.totop > a:hover {
+  color: #B70C00;
+}
+
+/* タイトルなどの基本部分の指定
+----------------------------------------------- */
+#intro.option1 #intro-core:after {
+  border-bottom: 3px solid #A20B00;
+}
+
+.nav-previous a, .nav-next a {
+  background-color: #A20B00;
+}
+
+.nav-previous a:hover, .nav-next a:hover {
+  background-color: #D50E00;
+}
+
+.edit-link a {
+  background-color: #A20B00;
+  padding: 3px 10px;
+  color: #FFF;
+}
+
+.edit-link a::hover,
+:focus {
+  background-color: #D50E00;
+  padding: 3px 10px;
+}
+
+.inner-contents-title {
+  background-color: #eee;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+/* ウィジェット
+----------------------------------------------- */
+#sidebar .widget {
+  border-bottom: none;
+}
+
+.widget ul {
+  border-width: 0px;
+}
+
+.widget li {
+  border-bottom: 1px dotted #ccc;
+}
+
+.widget li a {
+  padding-left: 10px;
+}
+
+.widget li a:hover {
+  color: #D50E00;
+}
+
+#sidebar h3.widget-title:after {
+  border-bottom: 3px solid #A20B00;
+}
+
+#sidebar h3.widget-title {
+  font-size: 14px;
+}
+
+#sidebar .textwidget {
+  padding: 10px;
+  line-height: 1.5;
+  border: none;
+}
+
+/* 投稿記事
+----------------------------------------------- */
+.blog-article {
+  border-width: 0 0 1px 0;
+  border-style: dotted;
+  border-color: #bbb;
 }
 
 /* body の余白指定 
@@ -208,6 +299,7 @@ th, td {
   background: #B70C00;
 }
 
+
 /* TOPページ のスライダー
 ----------------------------------------------- */
 
@@ -227,10 +319,20 @@ th, td {
   background-color: #B70C00;
 }
 
-/* TOPページ のコンテンツ指定
+
+/* TOPページ コンテンツ
 ----------------------------------------------- */
+#section-home .more-link {
+  padding: 8px 30px;
+  
+}
+
 #section-home .section {
-  min-height: 335px;
+  min-height: 330px;
+}
+
+#section-home .entry-content h3 {
+  font-family: "Hiragino Kaku Gothic Pro",'MUli',"YuGothic",helvetica,sans-serif;
 }
 
 .entry-content p:first-child {
@@ -255,6 +357,7 @@ th, td {
   }
 }
 
+
 /* TOPページ のニュース
 ----------------------------------------------- */
 .main-contents-title {
@@ -268,7 +371,7 @@ th, td {
 
 .main-contents-title span {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: normal;
 }
 
 h2 > span.subtitle {
@@ -277,13 +380,57 @@ h2 > span.subtitle {
   color: #777;
 }
 
-/* TOPページ ボタン
------------------------------------------------ */
-
-#section-home .more-link {
-    padding: 5px 20px;
+.contents-container {
+  width: 80%;
+  margin: 0 auto;
 }
 
+.news-posts {
+  clear: both;
+  overflow: hidden;
+  margin: 0 0 40px;
+}
+
+.news-posts .posts-image {
+  width: 110px;
+  float: left;
+  margin-right: 30px;
+}
+
+.news-posts .content {
+  float: left;
+}
+
+.news-posts .title {
+  font-weight: bold;
+}
+
+.news-posts li {
+  list-style-type: none;
+  overflow: hidden;
+  border-bottom: 1px solid #E0E0E0;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.news-posts .posts-info {
+  float: right;
+  width: 200px;
+}
+
+.news-posts .posts-info .title {
+  padding: 5px 0;
+  background-color: #333;
+  text-align: center;
+  font-size: 13px;
+  color: #FFF;
+  font-weight: normal;
+  width: 100%;
+}
+
+
+/* TOPページ ボタン
+----------------------------------------------- */
 .themebutton:hover, button:hover, html input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
   background: #D50E00;
 }
@@ -293,6 +440,7 @@ h2 > span.subtitle {
   padding: 5px 20px;
   background-color: #B70C00;
   color: #fff!important;
+  display: block;
 }
 
 .go-next-btn:hover {
@@ -350,6 +498,7 @@ h2 > span.subtitle {
   float: right;
 }
 
+
 /* TOPページ 活動内容紹介
 ----------------------------------------------- */
 .activity-container {
@@ -364,11 +513,12 @@ h2 > span.subtitle {
   padding: 15px;
   box-sizing: border-box;
   border: 1px solid #eee;
-  margin: 0 5px;
+  margin: 0 5px 10px;
 }
 
 .activity-container > .inner-wrap > dt > .title {
   font-size: 18px;
+  text-align: center;
 }
 
 .activity-container > .inner-wrap > dd {
@@ -380,70 +530,55 @@ h2 > span.subtitle {
 }
 
 .activity-container > .inner-wrap > dd > .desc {
-  overflow: hidden;
+  overflow: scroll;
+  height: 160px;
   margin-bottom: 20px;
 }
 
-/* TOPページ　ニュース
+
+/* page menu btn
 ----------------------------------------------- */
-.contents-container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.news-posts {
-  clear: both;
+.page-menu {
   overflow: hidden;
-  margin: 0 0 40px;
+  margin: 0 0 20px 0;
 }
 
-.news-posts .posts-image {
-  width: 110px;
-  float: left;
-  margin-right: 30px;
-}
-
-.news-posts .content {
-  float: left;
-}
-
-.news-posts .title {
-  font-weight: bold;
-}
-
-.news-posts li {
-  list-style-type: none;
-  overflow: hidden;
-  border-bottom: 1px solid #999;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-}
-
-.news-posts .posts-info {
-  float: right;
-  width: 200px;
-}
-
-.news-posts .posts-info .title {
-  padding: 5px 0;
-  background-color: #333;
-  text-align: center;
-  font-size: 13px;
-  color: #FFF;
-  font-weight: normal;
-  width: 100%;
-}
-
-/* page menu
------------------------------------------------ */
 .page-menu li {
-  line-height: 2.5;
+  list-style-type: none;
+  float: left;
+  line-height: 1.8;
+  padding: 5px 10px;
+  background-color: #B70C00;
+  margin: 5px;
 }
 
 .page-menu li > a {
   display: block;
-  text-decoration: underline;
+  color: #FFF;
 }
+
+.page-menu li:hover {
+  background: #D50E00;
+}
+
+
+/* sns blog btn
+----------------------------------------------- */
+.img-btn-set {
+  overflow: hidden;
+  margin: 0 0 20px 0;
+}
+
+.img-btn-set li {
+  list-style-type: none;
+  float: left;
+  margin: 5px;
+}
+
+.img-btn-set li:hover {
+  opacity: 0.8;
+}
+
 
 /* aboutus
 ----------------------------------------------- */

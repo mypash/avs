@@ -24,6 +24,7 @@
 </head>
 
 <body <?php body_class(); ?><?php thinkup_bodystyle(); ?>>
+<a name="top" id="top"></a>
 <div id="body-core" class="hfeed site">
 
   <header id="site-header">
