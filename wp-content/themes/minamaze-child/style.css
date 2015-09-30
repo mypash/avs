@@ -57,6 +57,50 @@ th, td {
   font-size: 0.8em;
 }
 
+/* table
+----------------------------------------------- */
+
+.basic-table {
+  margin-bottom: 20px;
+}
+
+.basic-table .title {
+  color: #fff;
+  background-color: #CC0000;
+  text-align: center;
+}
+
+.basic-table th {
+  font-weight: normal;
+  color: #fff;
+  background-color: #006600;
+}
+
+.basic-table td {
+  text-align: left;
+}
+
+/* レスポンシブ対応
+----------------------------------------------- */
+.no-pc {
+  display: none;
+}
+
+/* max width of 568px.like @sp */
+@media only screen and (max-width: 568px) {
+  .no-pc {
+    display: block;
+  }
+}
+
+/* min width of 569px.like @tb
+-------------------------------*/
+@media only screen and (min-width: 569px) {
+  .no-pc {
+    display: block;
+  }
+}
+
 
 /* totop
 ----------------------------------------------- */
@@ -74,6 +118,7 @@ th, td {
 .totop > a:hover {
   color: #B70C00;
 }
+
 
 /* タイトルなどの基本部分の指定
 ----------------------------------------------- */
@@ -95,8 +140,7 @@ th, td {
   color: #FFF;
 }
 
-.edit-link a::hover,
-:focus {
+.edit-link a:hover {
   background-color: #D50E00;
   padding: 3px 10px;
 }
@@ -107,6 +151,7 @@ th, td {
   font-size: 20px;
 }
 
+
 /* ウィジェット
 ----------------------------------------------- */
 #sidebar .widget {
@@ -114,7 +159,7 @@ th, td {
 }
 
 .widget ul {
-  border-width: 0px;
+  border-width: 0;
 }
 
 .widget li {
@@ -143,6 +188,7 @@ th, td {
   border: none;
 }
 
+
 /* 投稿記事
 ----------------------------------------------- */
 .blog-article {
@@ -150,6 +196,7 @@ th, td {
   border-style: dotted;
   border-color: #bbb;
 }
+
 
 /* body の余白指定 
 ----------------------------------------------- */
@@ -223,7 +270,9 @@ th, td {
   margin-top: 11px;
 }
 
-@media only screen and (max-width: 640px){
+/* max width of 568px.like @sp
+-------------------------------*/
+@media only screen and (max-width: 568px) {
   .logo-header .logo {
     height: 80px;
     width: 80px;
@@ -261,7 +310,9 @@ th, td {
   padding: 10px 20px;
 }
 
-@media only screen and (max-width: 768px){
+/* max width of 568px.like @sp
+--------------------------------*/
+@media only screen and (max-width: 568px) {
   #header-responsive {
     position: relative;
   }
@@ -283,9 +334,7 @@ th, td {
     margin: 0 0 6px auto;
     background-color: #FFF;
   }
-}
 
-@media only screen and (max-width: 640px){
   .logo-header .site-name {
     display: block!important;
   }
@@ -319,16 +368,41 @@ th, td {
   background-color: #B70C00;
 }
 
+/* max width of 568px.like @sp
+--------------------------------*/
+@media only screen and (max-width: 568px) {
+  #slider {
+    padding: 0!important;
+  }
+
+  #slider .featured-title span {
+    font-size: 16px!important;
+    font-weight: bold;
+  }
+
+  #slider .featured-link a {
+    border: 2px solid #FFF;
+  }
+
+  #slider .featured-link a span {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .slider-full #slider .rslides-inner ul {
+    width: 100%!important;
+  }
+
+}
 
 /* TOPページ コンテンツ
 ----------------------------------------------- */
 #section-home .more-link {
   padding: 8px 30px;
-  
 }
 
 #section-home .section {
-  min-height: 330px;
+  min-height: 340px;
 }
 
 #section-home .entry-content h3 {
@@ -339,7 +413,9 @@ th, td {
   min-height: 115px;
 }
 
-@media only screen and (max-width: 640px){
+/* max width of 568px.like @sp
+-------------------------------*/
+@media only screen and (max-width: 568px) {
   #section-home img {
     width: 100%;
   }
@@ -357,6 +433,18 @@ th, td {
   }
 }
 
+/* min width of 569px.like @tb
+-------------------------------*/
+@media only screen and (min-width: 569px) {
+  #section-home .section {
+    min-height: 360px;
+  }
+
+  #section-home .entry-content h3 {
+    font-size: 16px;
+  }
+}
+
 
 /* TOPページ のニュース
 ----------------------------------------------- */
@@ -364,6 +452,7 @@ th, td {
   text-align: center;
   font-weight: bold;
   font-size: 30px;
+  line-height: 1.2;
   background-color: #fff;
   padding-bottom: 10px;
   position: relative;
@@ -389,6 +478,7 @@ h2 > span.subtitle {
   clear: both;
   overflow: hidden;
   margin: 0 0 40px;
+  padding-top: 20px;
 }
 
 .news-posts .posts-image {
@@ -401,14 +491,17 @@ h2 > span.subtitle {
   float: left;
 }
 
-.news-posts .title {
+.news-posts .content > .title {
   font-weight: bold;
+  border-left: 4px solid #B70C00;
+  padding-left: 15px;
+  line-height: 1.3;
 }
 
 .news-posts li {
   list-style-type: none;
   overflow: hidden;
-  border-bottom: 1px solid #E0E0E0;
+  border-bottom: 1px solid #CCC;
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
@@ -452,7 +545,7 @@ h2 > span.subtitle {
   width: 100%;
   height: 65px;
   overflow: hidden;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
 
 .btn-container .half-size-btn {
@@ -462,6 +555,10 @@ h2 > span.subtitle {
   background-color: #f2f1f0;
   padding: 15px;
   box-sizing: border-box;
+}
+
+.btn-container .half-size-btn a {
+  display: block;
 }
 
 .btn-container .half-size-btn:hover,
@@ -475,6 +572,8 @@ h2 > span.subtitle {
 
 .btn-container .half-size-btn .title,
 .btn-container .full-size-btn .title {
+  width: 80%;
+  float: left;
   font-size: 18px;
 }
 
@@ -486,8 +585,7 @@ h2 > span.subtitle {
   box-sizing: border-box;
 }
 
-.btn-container .full-size-btn:hover,
-:focus {
+.btn-container .full-size-btn:hover {
   opacity: 0.8;
 }
 
@@ -496,6 +594,42 @@ h2 > span.subtitle {
   line-height: 1.8;
   color: #B70C00;
   float: right;
+}
+
+/* max width of 568px.like @sp
+-------------------------------*/
+@media only screen and (max-width: 568px) {
+  .btn-container .half-size-btn {
+    min-height: 68px;
+  }
+
+  .btn-container .half-size-btn .title {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .btn-container .full-size-btn .title {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+
+  .btn-container .half-size-btn i,
+  .btn-container .full-size-btn i {
+    padding-top: 7px;
+  }
+}
+
+/* min width of 569px.like @tb
+-------------------------------*/
+@media only screen and (min-width: 569px) {
+  .btn-container {
+    height: auto;
+  }
+
+  .btn-container .half-size-btn .title,
+  .btn-container .full-size-btn .title {
+    font-size: 15px;
+  }
 }
 
 
@@ -508,7 +642,6 @@ h2 > span.subtitle {
 
 .activity-container > .inner-wrap {
   width: 32%;
-  min-height: 250px;
   float: left;
   padding: 15px;
   box-sizing: border-box;
@@ -531,10 +664,41 @@ h2 > span.subtitle {
 
 .activity-container > .inner-wrap > dd > .desc {
   overflow: scroll;
-  height: 160px;
+  height: 145px;
   margin-bottom: 20px;
 }
 
+/* max width of 568px.like @sp
+-------------------------------*/
+@media only screen and (max-width: 568px) {
+  .activity-container {
+    display: block;
+  }
+
+  .activity-container > .inner-wrap {
+    width: 100%;
+  }
+}
+
+/* min width of 569px.like @tb
+-------------------------------*/
+@media only screen and ( min-width: 569px){
+  .activity-container > .inner-wrap {
+    width: 48%;
+  }
+
+  .activity-container > .inner-wrap > dt > .title {
+    font-size: 16px;
+  }
+}
+
+/* min width of 961px.like @pc
+-------------------------------*/
+@media only screen and ( min-width: 961px){
+  .activity-container > .inner-wrap {
+    width: 32%;
+  }
+}
 
 /* page menu btn
 ----------------------------------------------- */

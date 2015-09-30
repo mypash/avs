@@ -19,9 +19,9 @@ if ( ! isset( $content_width ) )
 	// Add Theme Options Features.
 	require_once( get_template_directory() . '/admin/main/options/00.theme-setup.php' ); 
 	require_once( get_template_directory() . '/admin/main/options/00.variables.php' ); 
-	require_once( get_template_directory() . '/admin/main/options/01.general-settings.php' ); 
-	require_once( get_template_directory() . '/admin/main/options/02.homepage.php' ); 
-	require_once( get_template_directory() . '/admin/main/options/03.header.php' ); 
+	require_once( get_template_directory() . '/admin/main/options/01.general-settings.php' );
+	require_once( get_template_directory() . '/admin/main/options/02.homepage.php' );
+	require_once( get_template_directory() . '/admin/main/options/03.header.php' );
 	require_once( get_template_directory() . '/admin/main/options/04.footer.php' );
 	require_once( get_template_directory() . '/admin/main/options/05.blog.php' ); 
 	require_once( get_template_directory() . '/admin/main/options/08.special-pages.php' ); 
