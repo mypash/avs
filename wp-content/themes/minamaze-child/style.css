@@ -57,11 +57,25 @@ th, td {
   font-size: 0.8em;
 }
 
+.no-pc {
+  display: block;
+}
+
+@media only screen and (max-width: 568px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 23px;
+  }
+}
+
 /* table
 ----------------------------------------------- */
 
 .basic-table {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .basic-table .title {
@@ -80,6 +94,7 @@ th, td {
   text-align: left;
 }
 
+
 /* レスポンシブ対応
 ----------------------------------------------- */
 .no-pc {
@@ -91,13 +106,9 @@ th, td {
   .no-pc {
     display: block;
   }
-}
 
-/* min width of 569px.like @tb
--------------------------------*/
-@media only screen and (min-width: 569px) {
-  .no-pc {
-    display: block;
+  #content {
+    padding: 10px;
   }
 }
 
@@ -149,6 +160,14 @@ th, td {
   background-color: #eee;
   padding: 5px 10px;
   font-size: 20px;
+}
+
+/* max width of 568px.like @sp
+-------------------------------*/
+@media only screen and (max-width: 568px) {
+  .inner-contents-title {
+    font-size: 18px;
+  }
 }
 
 
@@ -340,8 +359,8 @@ th, td {
   }
 }
 
-#header .menu > li.menu-hover > a, #header .menu > li.current_page_item > a, #header .menu > li.current-menu-ancestor > a, #header .menu > li > a:hover {
-    color: #B70C00;
+#header .menu > li.menu-hover > a, #header .menu > li.current_page_item > a, #header .menu > li.current-menu-ancestor > a, #header .menu > li > a:hover,#header-responsive li a:hover, #header-responsive li.current_page_item > a {
+    color: #B70C00!important;
 }
 
 .themebutton, button, html input[type="button"], input[type="reset"], input[type="submit"] {
@@ -381,7 +400,7 @@ th, td {
   }
 
   #slider .featured-link a {
-    border: 2px solid #FFF;
+    border: 1px solid #FFF;
   }
 
   #slider .featured-link a span {
@@ -426,6 +445,7 @@ th, td {
 
   #section-home .more-link {
     padding: 10px 50px;
+    background-color: #B70C00;
   }
 
   .themebutton, button, html input[type="button"], input[type="reset"], input[type="submit"] {
@@ -469,8 +489,19 @@ h2 > span.subtitle {
   color: #777;
 }
 
+/* max width of 568px.like @sp
+-------------------------------*/
+@media only screen and (max-width: 568px) {
+  h2 > span.subtitle {
+    font-size: 14px;
+  }
+  .contents-container {
+    width: 100%!important;
+  }
+}
+
 .contents-container {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -482,13 +513,14 @@ h2 > span.subtitle {
 }
 
 .news-posts .posts-image {
-  width: 110px;
+  width: 20%;
   float: left;
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .news-posts .content {
   float: left;
+  width: 75%;
 }
 
 .news-posts .content > .title {
@@ -496,6 +528,19 @@ h2 > span.subtitle {
   border-left: 4px solid #B70C00;
   padding-left: 15px;
   line-height: 1.3;
+}
+
+.news-posts .content > .desc > .more {
+  float: right;
+  background-color: #B70C00;
+  width: 100px;
+  line-height: 1.8;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.news-posts .content > .desc > .more a {
+  color: #FFF;
 }
 
 .news-posts li {
@@ -506,19 +551,39 @@ h2 > span.subtitle {
   margin-bottom: 20px;
 }
 
-.news-posts .posts-info {
-  float: right;
-  width: 200px;
-}
-
 .news-posts .posts-info .title {
-  padding: 5px 0;
-  background-color: #333;
-  text-align: center;
+  padding: 5px 10px;
+  background-color: #eee;
+  text-align: right;
   font-size: 13px;
-  color: #FFF;
+  color: #333;
   font-weight: normal;
   width: 100%;
+  box-sizing: border-box;
+}
+
+.news-posts .update {
+  clear: both;
+  text-align: right;
+}
+
+/* max width of 568px.like @sp
+-------------------------------*/
+@media only screen and (max-width: 568px) {
+  .news-posts .content {
+    width: 70%;
+  }
+
+  .news-posts .posts-image {
+    width: 25%;
+    float: left;
+    margin-right: 10px;
+  }
+
+  .news-posts .content > .title {
+    font-size: 16px;
+    padding-left: 10px;
+  }
 }
 
 
@@ -546,6 +611,10 @@ h2 > span.subtitle {
   height: 65px;
   overflow: hidden;
   margin-bottom: 70px;
+}
+
+.btn-container.mb5 {
+  margin-bottom: 5px
 }
 
 .btn-container .half-size-btn {
@@ -610,7 +679,7 @@ h2 > span.subtitle {
 
   .btn-container .full-size-btn .title {
     font-size: 17px;
-    line-height: 1.8;
+    line-height: 1.2;
   }
 
   .btn-container .half-size-btn i,
@@ -676,7 +745,11 @@ h2 > span.subtitle {
   }
 
   .activity-container > .inner-wrap {
-    width: 100%;
+    width: 98%;
+  }
+
+  .activity-container > .inner-wrap > dd > .desc {
+    height: auto;
   }
 }
 
@@ -744,8 +817,10 @@ h2 > span.subtitle {
 }
 
 
-/* aboutus
+/* contact
 ----------------------------------------------- */
-.mozi_w {
-  color: #FFF;
+div.wpcf7-mail-sent-ok {
+  background-color: #eee;
 }
+
+
