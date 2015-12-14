@@ -416,6 +416,10 @@ th, td {
 
 /* TOPページ コンテンツ
 ----------------------------------------------- */
+#section-home-inner {
+  margin-bottom: 50px;
+}
+
 #section-home .more-link {
   padding: 8px 30px;
 }
@@ -474,7 +478,6 @@ th, td {
   font-size: 30px;
   line-height: 1.2;
   background-color: #fff;
-  padding-bottom: 10px;
   position: relative;
 }
 
@@ -489,9 +492,15 @@ h2 > span.subtitle {
   color: #777;
 }
 
+
+
 /* max width of 568px.like @sp
 -------------------------------*/
 @media only screen and (max-width: 568px) {
+  .main-contents-title span {
+    font-size: 16px;
+  }
+
   h2 > span.subtitle {
     font-size: 14px;
   }
@@ -499,6 +508,8 @@ h2 > span.subtitle {
     width: 100%!important;
   }
 }
+
+
 
 .contents-container {
   width: 85%;
@@ -508,7 +519,7 @@ h2 > span.subtitle {
 .news-posts {
   clear: both;
   overflow: hidden;
-  margin: 0 0 40px;
+  margin: 0 0 20px;
   padding-top: 20px;
 }
 
@@ -551,6 +562,11 @@ h2 > span.subtitle {
   margin-bottom: 20px;
 }
 
+.news-posts .posts-info {
+  float: right;
+  width: 25%;
+}
+
 .news-posts .posts-info .title {
   padding: 5px 10px;
   background-color: #eee;
@@ -571,11 +587,15 @@ h2 > span.subtitle {
 -------------------------------*/
 @media only screen and (max-width: 568px) {
   .news-posts .content {
-    width: 70%;
+    width: 60%;
+  }
+
+  .news-posts .posts-info {
+    width: 35%;
   }
 
   .news-posts .posts-image {
-    width: 25%;
+    width: 35%;
     float: left;
     margin-right: 10px;
   }
@@ -610,11 +630,18 @@ h2 > span.subtitle {
   width: 100%;
   height: 65px;
   overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.btn-container.last {
   margin-bottom: 70px;
 }
 
-.btn-container.mb5 {
-  margin-bottom: 5px
+.btn-container .full-size-btn {
+  width: 100%;
+  float: left;
+  background-color: #f2f1f0;
+  box-sizing: border-box;
 }
 
 .btn-container .half-size-btn {
@@ -622,14 +649,16 @@ h2 > span.subtitle {
   margin-right: 0.5%;
   float: left;
   background-color: #f2f1f0;
-  padding: 15px;
   box-sizing: border-box;
 }
 
-.btn-container .half-size-btn a {
+.btn-container .full-size-btn a.title,
+.btn-container .half-size-btn a.title {
   display: block;
+  padding: 15px;
 }
 
+.btn-container .full-size-btn:hover,
 .btn-container .half-size-btn:hover,
 :focus {
   opacity: 0.8;
@@ -637,25 +666,6 @@ h2 > span.subtitle {
 
 .btn-container .half-size-btn:last-child {
   margin-right: 0;
-}
-
-.btn-container .half-size-btn .title,
-.btn-container .full-size-btn .title {
-  width: 80%;
-  float: left;
-  font-size: 18px;
-}
-
-.btn-container .full-size-btn {
-  width: 100%;
-  float: left;
-  background-color: #f2f1f0;
-  padding: 15px;
-  box-sizing: border-box;
-}
-
-.btn-container .full-size-btn:hover {
-  opacity: 0.8;
 }
 
 .btn-container .half-size-btn i,
@@ -668,23 +678,28 @@ h2 > span.subtitle {
 /* max width of 568px.like @sp
 -------------------------------*/
 @media only screen and (max-width: 568px) {
-  .btn-container .half-size-btn {
-    min-height: 68px;
+  .btn-container {
+    height: auto;
   }
 
-  .btn-container .half-size-btn .title {
+  .btn-container .half-size-btn:first-child {
+    margin-bottom: 5px;
+  }
+
+  .btn-container .half-size-btn {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .btn-container .half-size-btn .title,
+  .btn-container .full-size-btn .title {
     font-size: 14px;
     line-height: 1.4;
   }
 
-  .btn-container .full-size-btn .title {
-    font-size: 17px;
-    line-height: 1.2;
-  }
-
   .btn-container .half-size-btn i,
   .btn-container .full-size-btn i {
-    padding-top: 7px;
+    padding-top: 0;
   }
 }
 
@@ -769,7 +784,7 @@ h2 > span.subtitle {
 -------------------------------*/
 @media only screen and ( min-width: 961px){
   .activity-container > .inner-wrap {
-    width: 32%;
+    width: 32.2%;
   }
 }
 
@@ -803,24 +818,35 @@ h2 > span.subtitle {
 ----------------------------------------------- */
 .img-btn-set {
   overflow: hidden;
-  margin: 0 0 20px 0;
+  margin: 0 0 80px 0;
 }
 
 .img-btn-set li {
   list-style-type: none;
   float: left;
-  margin: 5px;
+  margin: 5px 0.5%;
+  width: 23.8%;
 }
 
 .img-btn-set li:hover {
   opacity: 0.8;
 }
 
+/* max width of 568px.like @sp
+-------------------------------*/
+@media only screen and (max-width: 640px) {
+  .img-btn-set {
+    text-align: center;
+  }
+
+  .img-btn-set li {
+    margin: 5px;
+    width: 100%;
+  }
+}
 
 /* contact
 ----------------------------------------------- */
 div.wpcf7-mail-sent-ok {
   background-color: #eee;
 }
-
-

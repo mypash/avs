@@ -37,13 +37,13 @@ get_header(); ?>
 		</ul>
 	</div>
 
-	<div class="btn-container mb5">
-		<div class="half-size-btn"><a href="/avs-school/"><div class="title">スクール日程をチェックする</div> <i class="fa fa-chevron-right"></i></a></div>
-		<div class="half-size-btn"><a href="/avs-event/"><div class="title">イベントをチェックする</div> <i class="fa fa-chevron-right"></i></a></div>
-	</div>
 	<div class="btn-container">
-		<div class="half-size-btn"><a href="/avs-report/"><div class="title">活動報告をチェックする</div> <i class="fa fa-chevron-right"></i></a></div>
-		<div class="half-size-btn"><a href="/avs-news/"><div class="title">更新情報をチェックする</div> <i class="fa fa-chevron-right"></i></a></div>
+		<div class="half-size-btn"><a class="title" href="/avs-school/">スクール日程をチェックする&nbsp;<i class="fa fa-chevron-right"></i></a></div>
+		<div class="half-size-btn"><a class="title" href="/avs-event/">イベントをチェックする&nbsp;<i class="fa fa-chevron-right"></i></a></div>
+	</div>
+	<div class="btn-container last">
+		<div class="half-size-btn"><a class="title" href="/avs-report/">活動報告をチェックする&nbsp;<i class="fa fa-chevron-right"></i></a></div>
+		<div class="half-size-btn"><a class="title" href="/avs-news/">更新情報をチェックする&nbsp;<i class="fa fa-chevron-right"></i></a></div>
 	</div>
 
 	<h2 class="main-contents-title">Alla vita sport <br class="no-pc"><span>（アッラヴィータスポルトの活動内容）</span></h2>
@@ -102,7 +102,7 @@ get_header(); ?>
 
 		<dl class="inner-wrap">
 			<dt>
-			<h3 class="title">夏休みスペインサッカーキャンプ</h3>
+			<h3 class="title">夏休みスペインサッカー<br class="no-pc">キャンプ</h3>
 			<img src="/wp-content/themes/minamaze-child/images/frv_s.jpg" alt="新町サッカースクール" width="600" height="300" class="aligncenter size-full wp-image-210" />
 			</dt>
 			<dd>
@@ -126,17 +126,25 @@ get_header(); ?>
 
 	</div>
 
-	<div class="btn-container">
-		<div class="full-size-btn"><a href="/school-information/"><div class="title" href="">スクールについて<br class="no-pc">詳しい内容を見る</div></a> <i class="fa fa-chevron-right"></i></div>
-	</div>
+  <div class="btn-container last">
+    <div class="full-size-btn"><a class="title" href="/school-information/">スクールの詳細を見る&nbsp;<i class="fa fa-chevron-right"></i></a></div>
+  </div>
 
 
-	<h2 class="main-contents-title">Alla vita sport blog & SNS</h2>
+	<h2 class="main-contents-title">Links</h2>
 	<ul class="img-btn-set">
-		<li><a href="http://ameblo.jp/allavitasport/" target="_blank"><img src="/wp-content/themes/minamaze-child/images/ameblo-btn.png" alt="ameblo-btn" width="230" height="60"></a></li>
-		<li><a href="http://blog.livedoor.jp/cajadaisuke6/" target="_blank"><img src="/wp-content/themes/minamaze-child/images/daisukeblog_230-60.jpg" alt="daisukeblog_230-60" width="230" height="60"></a></li>
-		<li><a href="http://ameblo.jp/futsal-life-forever/" target="_blank"><img src="/wp-content/themes/minamaze-child/images/miyamotoblog_230-60.jpg" alt="miyamotoblog_230-60" width="230" height="60"></a></li>
-		<li><a href="https://www.facebook.com/Alla-vita-sport-%E3%82%A2%E3%83%83%E3%83%A9-%E3%83%B4%E3%82%A3%E3%83%BC%E3%82%BF-%E3%82%B9%E3%83%9D%E3%83%AB%E3%83%88-209771822373773/timeline/" target="_blank"><img src="/wp-content/themes/minamaze-child/images/fb-btn.png" alt="fb-btn" width="230" height="60"></a></li>
+		<li><a href="http://ameblo.jp/allavitasport/" target="_blank"><img src="/wp-content/themes/minamaze-child/images/ameblo-btn.png" alt="ameblo-btn" width="300" height="78"></a></li>
+		<li><a href="http://evolista.net/" target="_blank"><img src="/wp-content/themes/minamaze-child/images/evo-btn.png" alt="高崎エヴォリスタのホームページ" width="300" height="78"></a></li>
+		<li><a href="http://shinmachi-sc.org/" target="_blank"><img src="/wp-content/themes/minamaze-child/images/shinmachi-btn.png" alt="新町サッカースクールのホームページ" width="300" height="78"></a></li>
+		<li><a href="http://oriental-gunma.com/frv/" target="_blank"><img src="/wp-content/themes/minamaze-child/images/frv-btn.png" alt="FRVスペインサッカーキャンプ ホームページ" width="300" height="78"></a></li>
+	</ul>
+
+	<h2 class="main-contents-title">Facebook</h2>
+	<ul class="img-btn-set">
+		<li><a href="https://www.facebook.com/Alla-vita-sport-%E3%82%A2%E3%83%83%E3%83%A9-%E3%83%B4%E3%82%A3%E3%83%BC%E3%82%BF-%E3%82%B9%E3%83%9D%E3%83%AB%E3%83%88-209771822373773/?fref=ts" target="_blank"><img src="/wp-content/themes/minamaze-child/images/fb-btn.png" alt="Alla vita sport" width="300" height="78"></a></li>
+		<li><a href="https://www.facebook.com/%E9%AB%98%E5%B4%8E%E3%82%A8%E3%83%B4%E3%82%A9%E3%83%AA%E3%82%B9%E3%82%BF%E3%83%95%E3%83%83%E3%83%88%E3%83%9C%E3%83%BC%E3%83%AB%E3%82%AF%E3%83%A9%E3%83%96-1493431744217217/?fref=ts" target="_blank"><img src="/wp-content/themes/minamaze-child/images/fb-evo-btn.png" alt="高崎エヴォリスタ" width="300" height="78"></a></li>
+		<li><a href="https://www.facebook.com/BFC-KOWA-477802985593974/timeline" target="_blank"><img src="/wp-content/themes/minamaze-child/images/fb-bfc-btn.png" alt="BFC/KOWA群馬" width="300" height="78"></a></li>
+		<li><a href="https://www.facebook.com/FundacionRealValladolid/?fref=ts" target="_blank"><img src="/wp-content/themes/minamaze-child/images/fb-frv-btn.png" alt="FUNDACION Real Valladolido Japan" width="300" height="78"></a></li>
 	</ul>
 
 </article>

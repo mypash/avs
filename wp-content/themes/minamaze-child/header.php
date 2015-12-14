@@ -55,7 +55,7 @@
         <div class="wrap">
           <a href="/">
             <div class="logo">
-              <img src="/wp-content/uploads/6dfad8b4965367cd30d61026f37a030a.png" alt="alla vita sport ロゴ">
+              <img src="/wp-content/themes/minamaze-child/images/avs−logo.png" alt="alla vita sport ロゴ">
             </div>
             <div class="site-name-wrap">
               <div class="site-name">Alla vita sport</div>
