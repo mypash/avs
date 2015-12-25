@@ -736,6 +736,7 @@ h2 > span.subtitle {
 .activity-container > .inner-wrap > dt > .title {
   font-size: 18px;
   text-align: center;
+  min-height: 48px;
 }
 
 .activity-container > .inner-wrap > dd {

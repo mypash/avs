@@ -50,7 +50,7 @@ get_header(); ?>
 	<div class="activity-container">
 		<dl class="inner-wrap">
 			<dt>
-			<h3 class="title">少年サッカークラブチーム&nbsp;運営</h3>
+			<h3 class="title">高崎エヴォリスタFC<br>少年サッカークラブチーム&nbsp;運営</h3>
 			<img src="/wp-content/themes/minamaze-child/images/evo-team_s.png" alt="エヴォリスタ 少年サッカーチーム" width="600" height="300" class="aligncenter size-full wp-image-128" /></a>
 			</dt>
 			<dd>
@@ -89,7 +89,7 @@ get_header(); ?>
 
 		<dl class="inner-wrap">
 			<dt>
-			<h3 class="title">みんなのフットサル</h3>
+			<h3 class="title">フットサルの楽しさを！<br>みんなのフットサル</h3>
 			<img src="/wp-content/themes/minamaze-child/images/minnano-class_s.jpg" alt="大人がメインのフットサルスクール「みんなのフットサル」" width="600" height="300" class="aligncenter size-full wp-image-220" />
 			</dt>
 			<dd>
@@ -102,8 +102,8 @@ get_header(); ?>
 
 		<dl class="inner-wrap">
 			<dt>
-			<h3 class="title">夏休みスペインサッカー<br class="no-pc">キャンプ</h3>
-			<img src="/wp-content/themes/minamaze-child/images/frv_s.jpg" alt="新町サッカースクール" width="600" height="300" class="aligncenter size-full wp-image-210" />
+			<h3 class="title">Real Valladolido<br>ファンデーションサッカーキャンプ</h3>
+			<img src="/wp-content/themes/minamaze-child/images/frv_s.png" alt="新町サッカースクール" width="600" height="300" class="aligncenter size-full wp-image-210" />
 			</dt>
 			<dd>
 				<div class="desc">
